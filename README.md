@@ -40,7 +40,7 @@ cd /var/lib/postgresql
 ```
 9. Starting the database server
 ```bash
-./bin/pg_ctl -D /var/lib/postgresql/main/ start
+./bin/pg_ctl -l logfile -D /var/lib/postgresql/main/ start
 ```
 10. Creating a database
 ```bash
