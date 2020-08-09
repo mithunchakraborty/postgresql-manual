@@ -1,5 +1,6 @@
 # PostreSQL Manual
 Just quick instructions for the Postgresql
+### Table of Contents
 - [Installing](#installation-from-source)
 ## Installation from source
 1. Downloading source from repository
