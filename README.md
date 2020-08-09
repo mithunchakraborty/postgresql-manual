@@ -2,6 +2,7 @@
 Just quick instructions for the Postgresql
 ### Table of Contents
 - [Installing](#installation-from-source)
+- [Upgrading](#upgrading)
 ## Installation from source
 1. Downloading source from repository
 ```bash
@@ -53,4 +54,15 @@ create database some_db;
 cd ~/Desktop
 rm -rf postgresql-12.3.tar.gz postgresql-12.3
 ```
-
+## Upgrading
+Transferring data from an old version to a new one
+```bash
+cd /var/lib/postgres
+./bin/pg_dumpall > dbdump
+./bin/pg_ctl stop
+```
+Next, you need to go to the directory with the new version
+```bash
+./bin/pg_ctl initdb
+./bin/psql -d mithun -f /var/lib/postgres/dbdump
+```
