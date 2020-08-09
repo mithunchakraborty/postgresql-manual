@@ -5,6 +5,7 @@ Just quick instructions for the Postgresql
 ## Installation from source
 1. Downloading source from repository
 ```bash
+cd ~/Desktop
 wget https://ftp.postgresql.org/pub/source/v12.3/postgresql-12.3.tar.gz
 ```
 2. Unzip archive and go to the directory
@@ -49,6 +50,7 @@ create database some_db;
 ```
 11. Removing sources
 ```bash
+cd ~/Desktop
 rm -rf postgresql-12.3.tar.gz postgresql-12.3
 ```
 
