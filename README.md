@@ -61,7 +61,7 @@ cd /var/lib/postgres
 ./bin/pg_dumpall > dbdump
 ./bin/pg_ctl stop
 ```
-Next, you need to go to the directory with the new version
+Next, you need to go to the directory with the new version and execute it there
 ```bash
 ./bin/pg_ctl initdb
 ./bin/psql -d mithun -f /var/lib/postgres/dbdump
